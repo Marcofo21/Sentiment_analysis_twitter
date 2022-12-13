@@ -20,7 +20,7 @@ def find_hashtags(tweet):
     return out
 
 
-def url_cleaner(urls):
+def url_cleaner(url):
 
     """
     This function cleans strings of URLs so that only the domain and second-level domain
@@ -33,7 +33,7 @@ def url_cleaner(urls):
             out (string): string cleaned of subdomains, top-level domains, and scheme.
     """
 
-    out = re.sub(r"https?:\/\/", "", urls)
+    out = re.sub(r"https?:\/\/", "", url)
     out = re.sub(r"www\.", "", out)
     out = re.sub(r"\.com", "", out)
     out = re.sub(r"\.html", "", out)
