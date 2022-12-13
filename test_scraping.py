@@ -13,9 +13,9 @@ def hashtag_finder_input():
 @pytest.fixture
 def url_cleaner_input():
     out = {
-        "url": """https://stackoverflow.com/questions
-        /11346283/renaming-column-names-in-pandas?page
-        =1&tab=scoredesc#tab-top"""
+        "url": "https://stackoverflow.com/questions"
+        "/11346283/renaming-column-names-in-pandas?page"
+        "=1&tab=scoredesc#tab-top"
     }
     return out
 
